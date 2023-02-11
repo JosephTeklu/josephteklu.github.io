@@ -1,12 +1,57 @@
-* {
+    * {
     margin: 0;
     padding: 0;
-}
+
+
+    }
+    /* when two selectors will have the same rules, it can be written once by adding a comma (,) and a line*/
+    
+    header,
+    footer{
+        width: 100%;
+        height: 120px;
+        background-color: blue;
+        color: white;
+    }
+
+    h1,
+    h2{
+        text-align: center;
+    }
+
+    img{
+        display: block; /*display is assigned the block value which assigns each image to start on a new line*/
+        height: 50px;
+        width: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    p{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .card{  /* the period (.) before card designates this as a class, any HTML lement assigned to this class will gain these property asignments from the CSS below*/
+        width: 80%;
+        margin: 40px auto;  /* here we assign 40px to the top and bottom and auto to the left and right*/
+        border: 5px solid gray;
+        box-shadow: 5px 10px #888888;
+    }
 
 /* 
     div {color: blue; text-align: justify;}
     
     selector: defines the element or attributes to which the rules or declarations will apply 
+        ex: div
+    declaration: contain two important components: the CSS property to apply and the value of the propery
+        ex: color: blue; tezt-aligh: justify
 
+    margin: this poroperty indicate how dmuch space you want outside of an element, a transparent buffer outside an element
+    padding: this property adds space around the content inside an element, when increased the element becomes bigger
+
+    **  
+
+    - rules set inside this selector (*) as shown above indicate that all elements visible on the page must follow them
 
 */
